@@ -1,0 +1,5 @@
+#!/bin/bash
+#This is just a comment
+hostname
+uptime
+df | wc -l

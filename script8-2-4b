@@ -1,0 +1,3 @@
+#!/bin/bash
+#This program searches the database for the information that you provide as #an argument
+grep -i $1 ~/hardware.database

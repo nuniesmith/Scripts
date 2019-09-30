@@ -1,0 +1,14 @@
+#!/bin/bash
+echo -e "What is your item? --> \c"
+read ITEM
+echo -e "What is the cost? --> \c"
+read COST
+echo -e "What is the selling price? --> \c"
+read PRICE
+echo -e "How many are in stock? --> \c"
+read STOCK
+echo -e "$ITEM \t $COST \t $PRICE \t $STOCK" >> ~/hardware.database
+
+sort ~/hardware.database > /tmp/$$.tmp
+rm ~/hardware.database
+mv /tmp/$$.tmp ~/hardware.database
